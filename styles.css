@@ -1,0 +1,321 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f1e8;
+            color: #333;
+        }
+
+        header {
+            background-color: #6b4226;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background-color: #3e2617;
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: all 0.2s ease;
+        }
+
+        nav a:hover {
+            color: #f0c674;
+            transform: scale(1.2);
+        }
+
+        .banner {
+            background: linear-gradient(
+                rgba(70, 40, 20, 0.7),
+                rgba(70, 40, 20, 0.7)
+            ),
+            url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=80");
+
+            background-size: cover;
+            background-position: center;
+
+            height: 420px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .banner h2 {
+            font-size: 45px;
+            margin-bottom: 15px;  
+            color: white
+        }
+
+        .banner p {
+            font-size: 21px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .boton {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 13px 25px;
+            background-color: #d69b45;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+            font-weight: bold;
+            transition: transform 0.1s;
+        }
+
+        .boton:hover {
+            background-color: #b67b2e;
+            transform: scale(1.1);
+        }
+
+        section {
+            padding: 50px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #6b4226;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .presentacion {
+            text-align: center;
+            max-width: 850px;
+            margin: auto;
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+        }
+
+        .producto {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            transition: transform 0.2s;
+        }
+
+        .producto:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        .producto .icono {
+            font-size: 65px;
+            margin-bottom: 15px;
+        }
+
+        .producto h3 {
+            color: #6b4226;
+            margin-bottom: 10px;
+        }
+
+        .producto p {
+            line-height: 1.5;
+        }
+
+        .empresa {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .tarjeta {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .tarjeta:hover {
+            transform: scale(1.1);
+        }
+
+        .tarjeta h3 {
+            color: #6b4226;
+            margin-bottom: 15px;
+            font-size: 25px;
+        }
+
+        .tarjeta p {
+            line-height: 1.7;
+        }
+
+        .personal {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+        }
+
+        .persona {
+            background-color: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .persona:hover {
+            transform: scale(1.1);
+        }
+
+        .foto {
+            width: 100px;
+            height: 100px;
+            background-color: #d69b45;
+            border-radius: 50%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 45px;
+        }
+
+        .persona h3 {
+            margin-top: 15px;
+            color: #6b4226;
+        }
+
+        .persona p {
+            margin-top: 8px;
+            color: #555;
+        }
+
+        .comentarios {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        label:hover {
+            cursor: pointer;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 130px;
+            resize: vertical;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 13px;
+            border: none;
+            border-radius: 7px;
+            background-color: #6b4226;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3e2617;
+        }
+
+        #mensaje {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+            color: #497a32;
+        }
+
+        .contacto {
+            background-color: #6b4226;
+            color: white;
+            text-align: center;
+        }
+
+        .contacto h2 {
+            color: white;
+        }
+
+        .contacto p {
+            margin: 10px;
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: #3e2617;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            .banner h2 {
+                font-size: 32px;
+            }
+
+            .empresa {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+        }
