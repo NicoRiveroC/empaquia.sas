@@ -1,4 +1,6 @@
-document.getElementById("formComentario").addEventListener("submit", function(event) {
+document
+            .getElementById("formComentario")
+            .addEventListener("submit", function(event) {
 
                 event.preventDefault();
 
